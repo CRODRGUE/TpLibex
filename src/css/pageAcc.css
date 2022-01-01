@@ -1,0 +1,59 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100;200;300;400;500&display=swap');
+
+body{
+    width: 100vw;
+    height: 100vw;
+    background-color: #000;
+    margin: 0;
+    padding: 0;
+}
+#conteneur{
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center;
+    box-sizing: border-box;
+}
+#nav{
+    width: 100%;
+    min-width: 100px;
+    height: auto;
+    position: fixed;
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+    justify-content: flex-start;
+    margin-top: 10px;
+    padding: 5px 10px;
+    background-color: rgb(207, 9, 9);
+}
+#logoLibex{
+    width: 85px;
+    height: 45px;
+}
+.btn{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #fff;
+    font-size: 15px;
+    font-family: 'Outfit', Arial, sans-serif;
+    margin-right: 10px;
+}
+
+#more{
+    width: 15px;
+    height: 15px;
+}
+
+
+#profilpic>img{
+    width: 40px;
+    height: 45px;
+    border-radius: 50%;
+}
+#profilpic{
+    position: relative;
+    /*left: 10vw;*/
+}
+
+

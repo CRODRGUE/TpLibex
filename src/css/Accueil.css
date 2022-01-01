@@ -1,0 +1,106 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100;200;300;400;500&display=swap');
+
+
+
+*, ::after, ::after{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    width: 100vw;
+    height: 100vh;
+    background-image: url("../../img/11.jpg");
+}
+
+#backStyle{
+    width: auto;
+    height: auto;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: space-between; /* il faut remettre un center !!! */
+    align-items: center;
+    background: linear-gradient(to right, #000, rgba(0,0,0,0.8));
+}
+.firstContent{
+    height: auto;
+    width: 80vw;
+    margin-bottom: 5vh;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-evenly;
+
+}
+
+/* Slider nouveautés / Slider top 5 */
+
+.blockNew, .blockTop{
+    box-sizing: border-box;
+    width: 45%;
+    height: 30vh;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: space-evenly;
+    background-color: #1d1d1d;
+    border: 2px solid #000;
+    border-radius: 5px;
+
+}
+
+.contentTop, .sliderT{
+    display: flex;
+    flex-flow: row nowrap;
+}
+
+.contentTop>img, .sliderT>img{
+    height: 20vh;
+    width: 15vw;
+}
+
+.txt{
+    margin-left: 10px;
+    display: flex;
+    flex-flow: column nowrap;
+}
+.txt>p{
+    margin-bottom: 10px;
+    font-family: 'Outfit', Arial, sans-serif;
+    font-size: 15px;
+    color: #fff;
+}
+
+.blockNew>p, .blockTop>p{
+    width: fit-content;
+    position: relative;
+    left: 50px;
+    color: #fff;
+    font-size: 20px;
+    font-family: 'Outfit', Arial, sans-serif;
+}
+
+.imgnav{
+    width: 50px;
+    height: 50px;
+}
+
+.slider{
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+}
+.sliderN, .sliderT{
+    display: none;
+}
+
+.sliderN.active, .sliderT.active{
+    display: block;
+    animation: fade 30s;
+}
+
+@keyframes fade{
+    form{
+        opacity: 0;
+    }to{
+        opacity: 1;
+    }
+}

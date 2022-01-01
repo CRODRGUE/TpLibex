@@ -1,0 +1,112 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100;200;300;400;500&display=swap');
+
+body{
+    margin: 0;
+    padding: 0;
+    width: 100vw;
+    height: 100vh;
+    background-image: url('../../img/bibliothèque.jpg');
+}
+#backStyle{
+    background: linear-gradient(to right, #000, rgba(0,0,0,0.7));   
+    display: flex; 
+    flex-flow: column nowrap;
+    align-items: center;
+}
+
+#btnRetour{
+    width: 10vw;
+    min-width: 100px;
+    height: 3vw;
+    min-height: 50px;
+    align-self: flex-end;
+    position: fixed;
+    top: 45vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: #f5deb3;
+    border-radius: 5px 0px 0px 5px;
+    font-family: 'Outfit', Arial, sans-serif;
+    font-size: 15px;
+    color: #000;
+
+}
+
+#btnRetour:hover{
+    background-color: #000;
+    color: #FFF;
+    animation: btnBack 2s infinite reverse;
+}
+
+#CGULibex{
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+}
+
+#contactLibex, #CGULibex{
+    width: fit-content;
+    font-family: 'Outfit', Arial, sans-serif;
+    font-size: 15px;
+    color: #FFF;
+}
+
+#contactLibex>h3, #CGULibex>h3{
+    width: fit-content;
+    font-family: 'Outfit', Arial, sans-serif;
+    font-size: 40px;
+    font-weight: 500;
+    color: #f5deb3;
+    text-decoration: underline;
+    margin-bottom: 15px;
+}
+#Condition{
+    width: 80vw;
+    height: auto;
+    margin-bottom: 25px;
+}
+
+#Condition h4{
+    width: fit-content;
+    font-family: 'Outfit', Arial, sans-serif;
+    font-size: 25px;
+    font-weight: 400;
+    color: #f5deb3;
+    margin: 0;   
+} 
+
+h6{
+    width: fit-content;
+    font-family: 'Outfit', Arial, sans-serif;
+    font-size: 20px;
+    font-weight: 300;
+    color: #f5deb3;
+    margin: 10px 0px;
+}
+
+p{
+    text-align: justify;
+}
+
+@keyframes btnBack{
+
+    0% {border-top: 1px solid #f5deb3; }
+    33% {border-left: 1px solid #f5deb3; }
+    66% {border-bottom: 1px solid #f5deb3; }
+    100% {border: 1px solid #f5deb3; }
+}
+
+@media screen and (max-width:800px){
+
+    #contactLibex>h3, #CGULibex>h3, #Condition h4, h6{
+        font-size: 20px;
+    }
+
+    #Condition{
+        width: 95vw
+    }
+    
+
+}
