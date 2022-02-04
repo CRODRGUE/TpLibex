@@ -73,7 +73,12 @@
     font-family: 'Outfit', Arial, sans-serif;
 }
 
-#btnCard>p:hover{
+#fav>i{
+    visibility: hidden;
+    color: #000;
+}
+
+#btnCard>p:hover, #btnCard>#fav>i:hover{
     background-color: #fff;
     color: #000;
 }

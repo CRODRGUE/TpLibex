@@ -3,6 +3,7 @@ const itemOpenBlock = document.querySelectorAll('.bookBlock>img')
 const itemOpenProfil = document.querySelectorAll('#favContent>img')
 const card = document.querySelector('.cardInfo')
 const btnFav = document.querySelector('#btnCard>#fav')
+const iconFav = document.querySelector('#fav>i')
 
 function closeCard(){
     card.classList.toggle('active')
@@ -34,10 +35,10 @@ function stateFav(){
     const colorBack = 'var(--fav)';
   if (btnFav.style.backgroundColor == colorBack){
         btnFav.style.backgroundColor = '#f5deb3';
-        btnFav.innerHTML = 'Ajouter aux favoris';
+        iconFav.style.visibility = 'hidden'
   }else{
         btnFav.style.backgroundColor = colorBack;
-        btnFav.innerHTML = '<i class="far fa-heart"></i> ' + btnFav.innerHTML;
+        iconFav.style.visibility = 'visible'
   }
   console.log("function excuter name > stateFav()")
 }
